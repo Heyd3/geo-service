@@ -48,6 +48,6 @@ public class MessageSenderImplTest {
         assertEquals(result, expected);
     }
  private static Stream<String> source() {
-        return Stream.of("172.12", "76.14", "172.12.356", "76.14.483");
+        return Stream.of("172.12", "76.14", "172.12.356", "96.14.483");
     }
 }
