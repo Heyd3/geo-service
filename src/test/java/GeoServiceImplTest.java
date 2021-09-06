@@ -20,4 +20,12 @@ public class GeoServiceImplTest {
         assertEquals(expected.getStreet(), result.getStreet());
         assertEquals(expected.getBuiling(), result.getBuiling());
     }
+    
+    @Test
+    public void byCoordinates() {
+        double a = 5;
+        double b = 5;
+        GeoServiceImpl geoService = new GeoServiceImpl();
+        assertThrows(RuntimeException.class, () -> geoService.byCoordinates(a, b));
+    }
 }
